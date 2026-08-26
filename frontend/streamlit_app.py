@@ -2,7 +2,7 @@ import streamlit as st
 import requests
 
 # Point this to your deployed backend URL once hosted, or localhost for local dev
-API_URL = "http://127.0.0.1:8000/predict"
+API_URL = "https://stellar-object-classifier-ofph.onrender.com/predict"
 
 st.set_page_config(page_title="Stellar Object Classifier", page_icon="🌌", layout="centered")
 
