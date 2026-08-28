@@ -12,7 +12,6 @@ le = joblib.load(BASE_DIR / "label_encoder.pkl")
 
 
 class StellarInput(BaseModel):
-    id: int
     alpha: float
     delta: float
     u: float

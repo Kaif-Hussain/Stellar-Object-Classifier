@@ -17,7 +17,6 @@ with st.form("prediction_form"):
     col1, col2 = st.columns(2)
 
     with col1:
-        obj_id = st.number_input("ID", min_value=0, value=0, step=1)
         alpha = st.number_input("Alpha (Right Ascension)", value=150.0, format="%.6f")
         delta = st.number_input("Delta (Declination)", value=20.0, format="%.6f")
         u = st.number_input("u (ultraviolet magnitude)", value=22.0, format="%.6f")
@@ -35,7 +34,6 @@ with st.form("prediction_form"):
 
 if submitted:
     payload = {
-        "id": obj_id,
         "alpha": alpha,
         "delta": delta,
         "u": u,
